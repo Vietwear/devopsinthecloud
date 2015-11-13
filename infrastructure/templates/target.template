@@ -8,7 +8,7 @@
     "KeyName" : {
       "Description" : "Name of an existing EC2 KeyPair to enable SSH access to the instances",
       "Type" : "String",
-      "Default" : "ditc",
+      "Default" : "chef",
       "MinLength": "1",
       "MaxLength": "64",
       "AllowedPattern" : "[-_ a-zA-Z0-9]*",
@@ -18,7 +18,7 @@
     "InstanceType" : {
       "Description" : "EC2 instance type",
       "Type" : "String",
-      "Default" : "t2.medium",
+      "Default" : "t2.micro",
       "ConstraintDescription" : "must be a valid EC2 instance type."
     },
 
@@ -56,7 +56,7 @@
       "c4.xlarge"   : { "Arch" : "64" }
     },
     "AWSRegionArch2AMI" : {
-      "us-east-1"      : { "32" : "ami-7f418316", "64" : "ami-1ecae776" },
+      "us-east-1"      : { "32" : "ami-7f418316", "64" : "ami-61bbf104" },
       "us-west-1"      : { "32" : "ami-951945d0", "64" : "ami-d114f295" },
       "us-west-2"      : { "32" : "ami-16fd7026", "64" : "ami-e7527ed7" },
       "eu-central-1"   : { "32" : "ami-dcfa4edd", "64" : "ami-a8221fb5" },
