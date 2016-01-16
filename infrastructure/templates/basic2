@@ -1,0 +1,19 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Description" : "A Con Chim.",
+
+  "Resources" : {
+    "WebInstance" : {
+      "Type" : "AWS::EC2::Instance",
+      "Properties" : {
+        "SecurityGroups" : [ { "Ref" : "WebSecurityGroup" } ],
+        "KeyName" : "chef",
+        "ImageId" : "ami-57cd8732",
+         "InstanceType": "t2.micro",
+       "Tags" : [
+            {"Key" : "Name", "Value" : "Tomcat"},
+            {"Key" : "Environment", "Value" :"pre_production"},
+            {"Key" : "Owner", "Value" : "VuTran"}
+        ]
+    }
+}
