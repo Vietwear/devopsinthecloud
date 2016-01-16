@@ -13,7 +13,7 @@
        "Tags" : [
             {"Key" : "Name", "Value" : "Tomcat"},
             {"Key" : "Environment", "Value" :"pre_production"},
-            {"Key" : "Owner", "Value" : "VuTran"}
-        ]
-    }
+            {"Key" : "Owner", "Value" : "VuTran"},
+        ],
+    },
 }
